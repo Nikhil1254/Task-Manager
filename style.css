@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.toolbox-cont{
+    height: 5rem;
+    background-color: #4b4b4b;
+    display: flex;
+    align-items: center;
+}
+
+.toolbox-cont > *{
+    margin-left: 4rem;
+    border-radius: 3px;
+}
+
+.toolbox-priority-cont{
+    height: 3.5rem;
+    width: 16rem;
+    background-color: #3d3d3d;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.action-btn-cont{
+    height: 3.5rem;
+    width: 8rem;
+    background-color: #3d3d3d;
+    display: flex;
+    overflow: hidden;
+}
+
+.action-btn-cont > *{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #dcdde1;
+    cursor: pointer;
+}
+
+
+.color{
+    height: 1.5rem;
+    width: 2.5rem;
+    background-color: tomato;
+    border-radius: 2px;
+}
+
+.color:hover{
+    cursor: pointer;
+    border: 2px groove white;
+}
+
+.lightpink{
+    background-color: lightpink;
+}
+
+.lightgreen{
+    background-color: lightgreen;
+}
+
+.lightblue{
+    background-color: lightblue;
+}
+
+.black{
+    background-color: black;
+}
+
+.modal-cont{
+    height: 50vh;
+    width: 45vw;
+    background-color: lightblue;
+    position: absolute;
+    top: calc((100vh/2) - (50vh/2)); 
+    left: calc((100vw/2) - (45vw/2));
+    display: none;
+    border-radius: 3px;
+    overflow: hidden; /* to show border radius properly */
+
+    box-shadow: 0px 0px 15px grey;
+    transition: display 0.4s;
+}
+
+.choices{
+    width: 100%;
+    height: 2rem;
+    background-color: grey;
+}
+
+.textarea-cont{
+    width: 75%;
+    border: none;
+    outline: none;
+    background-color: lightgrey;
+    resize: none;
+    padding: 1rem;
+}
+
+.priority-colors-cont{
+    width: 25%;
+    background-color: #2d3436;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.priority-color{
+    height: 3rem;
+    width: 60%;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.active{
+    box-shadow: 0px 0px 10px white;
+}
+
+.main-cont{
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.ticket-cont{
+    height: 16rem;
+    width: 15rem;
+    background-color: #f5f6fa;
+    border-radius: 3px;
+}
+
+.ticket-cont:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 5px grey ;
+}
+
+.ticket-color{
+    height: 1rem;
+}
+
+.ticket-id{
+    height: 2rem;
+    padding: 0.4rem;
+    border-bottom: 1px dotted black;
+    font-weight: 600;
+}
+
+.task-area{
+    height: calc(100% - 1rem - 2rem - 2rem);
+    padding: 0.4rem;
+    font-style: italic;
+    outline: none;
+}
+
+.remove-btn-active{
+    color: red;
+}
+
+.ticket-lock{
+    background-color: #f5f6fa;
+    height: 2rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0.8rem;
+}
+
+
+.choices{
+    height: 100%;
+    width: 2rem;
+    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.done,.close{
+    width: 100%;
+    padding: 10px;
+}
+
+.done:hover,.close:hover{
+    background-color: white;
+    
+}
+
+
+/* media queries------------------------------------------ */
+@media screen and (max-width : 850px) {
+    .modal-cont{
+        width: 80%;
+        height: 38vh;
+        top: calc((100vh/2) - (38vh/2));
+        left: calc((100vw/2) - (80%/2));
+    }
+
+    .toolbox-cont > * {
+        margin: 5px;
+    }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+    <script src="./script.js" defer></script>
+    <title>Task Manager</title>
+</head>
+
+<body>
+    <!-- ToolBox navbar -->
+    <div class="toolbox-cont">
+        <div class="toolbox-priority-cont">
+            <div class="lightpink color" title="Priority 1"></div>
+            <div class="lightblue color" title="Priority 2"></div>
+            <div class="lightgreen color" title="Priority 3"></div>
+            <div class="black color" title="Priority 4"></div>
+        </div>
+        <div class="action-btn-cont">
+            <div class="add-btn" title="Add Task">
+                <i class="fa-solid fa-plus"></i>
+            </div>
+            <div class="remove-btn" title="Remove Task">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Container -->
+    <div class="main-cont">
+    </div>
+
+    <!-- Modal Container -->
+
+        <div class="modal-cont">
+            <textarea class="textarea-cont" spellcheck="false"> </textarea>
+    
+            <div class="priority-colors-cont">
+                <div class="lightpink priority-color"></div>
+                <div class="lightblue priority-color"></div>
+                <div class="lightgreen priority-color"></div>
+                <div class="black priority-color active"></div>
+            </div>
+
+            <div class="choices">
+                <div class="done">
+                    <i class="fa-solid fa-check"></i>
+                </div>
+
+                <div class="close">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
